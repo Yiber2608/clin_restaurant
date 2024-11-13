@@ -1,0 +1,11 @@
+services:
+  apirestsb:
+    build: .
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    environment:
+      DB_URL: jdbc:mysql://database-restaurant.cvik6qigqv4f.us-east-2.rds.amazonaws.com/restaurant
+      DB_USER: admin
+      DB_PASSWORD: 20241006Kt.
+    restart: always
